@@ -49,7 +49,7 @@ public class SginUp extends HttpServlet {
 		String sentname2 = request.getParameter("fname");
 		String sentkatakana1 = request.getParameter("lname-kana");
 		String sentkatakana2 = request.getParameter("fname-kana");
-		
+
 
 		User user = new User();
 		user.setEmail(sentEmail);
@@ -72,6 +72,8 @@ public class SginUp extends HttpServlet {
 				try {
 					jdbc.closeDbcom();
 				} catch (SQLException e) {
+
+
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}
