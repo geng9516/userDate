@@ -72,8 +72,6 @@ public class SginUp extends HttpServlet {
 				try {
 					jdbc.closeDbcom();
 				} catch (SQLException e) {
-
-
 					// TODO 自動生成された catch ブロック
 					e.printStackTrace();
 				}

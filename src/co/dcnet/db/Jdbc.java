@@ -52,13 +52,13 @@ public class Jdbc {
 	}
 
 	public void insertUserDate(User user) throws SQLException {
-		String sql = "insert into t_users(id,pass,email,name,katakana)value(";
-		sql += "'" + user.getId() + "',";
-		sql += "'" + user.getPass() + "',";
-		sql += "'" + user.getEmail() + "',";
-		sql += "'" + user.getName() + "',";
-		sql += "'" + user.getKatakana() + "')";
-
+		String sql = "insert into t_users(id,pass,email,name,katakana)value('";
+		sql += user.getId() + "','";
+		sql += user.getPass() + "','";
+		sql += user.getEmail() + "','";
+		sql += user.getName() + "','";
+		sql += user.getKatakana() + "')";
+		System.out.println(sql);
 		stmt.executeUpdate(sql);
 	}
 

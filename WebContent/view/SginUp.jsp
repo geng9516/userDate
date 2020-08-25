@@ -62,6 +62,7 @@
 							<br>
 							<br>
 							<em>確認のためもう一度入力してください（コピー・貼り付けはしないでください。）。</em>
+							<br>
 							<input type="text" id="email2" size="35"> <br></td>
 					</tr>
 					<tr>
